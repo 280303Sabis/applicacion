@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="applicacion.MainPage"
+             BackgroundColor="White"
+             Title="Home">
+
+    <Grid RowDefinitions="Auto, *, Auto" Padding="20">
+
+        <!-- Main Content -->
+        <StackLayout Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center">
+            <!-- Icono o imagen -->
+            <Image Source="parquimetro.png" 
+                   HeightRequest="150" 
+                   WidthRequest="150" 
+                   Margin="0,0,0,20" />
+
+            <!-- Texto de bienvenida -->
+            <Label Text="Bienvenido a tu parquímetro digital"
+                   FontSize="24"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,0,0,30" />
+
+            <!-- Botones -->
+            <Button Text="Ingresar"
+                    BackgroundColor="Purple"
+                    TextColor="White"
+                    CornerRadius="10"
+                    WidthRequest="200"
+                    HeightRequest="50"
+                    Margin="0,0,0,20"
+                    Clicked="OnIngresarClicked" />
+            <!-- Vincula a registrar -->
+            <Button Text="Registrar"
+                    BackgroundColor="Purple"
+                    TextColor="White"
+                    CornerRadius="10"
+                    WidthRequest="200"
+                    HeightRequest="50"
+                    Clicked="OnRegistrarClicked" />
+            <!-- Vincula a registrar -->
+            
+            
+
+        </StackLayout>
+    </Grid>
+</ContentPage>

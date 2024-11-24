@@ -1,0 +1,32 @@
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="applicacion.MapPage">
+
+    <Grid RowDefinitions="Auto, *, Auto">
+        <!-- Título -->
+        <Label Text="Mapa"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Margin="10" />
+
+        <!-- WebView para cargar Google Maps -->
+        <WebView x:Name="GoogleMapsWebView"
+                 Source="https://www.google.com/maps/@25.686613,-100.316116,14z"
+                 Grid.Row="1"
+                 VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand" />
+
+        <!-- Botón Ver Parquímetros -->
+        <Button Text="Ver Parquímetros"
+                Grid.Row="2"
+                BackgroundColor="#66ceff"
+                TextColor="White"
+                CornerRadius="10"
+                HeightRequest="50"
+                Margin="20"
+                HorizontalOptions="Center" />
+    </Grid>
+</ContentView>
+

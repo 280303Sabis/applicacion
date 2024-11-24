@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="applicacion.RegisterPage"
+             Title="Registro"
+             BackgroundColor="White">
+
+    <StackLayout Padding="20" Spacing="25" VerticalOptions="Center">
+        <!-- Título -->
+        <Label Text="Registrar Usuario"
+               FontSize="34"
+               TextColor="Black"
+               HorizontalTextAlignment="Center"
+               Margin="0,0,0,20" />
+
+        <!-- Campo para el Nombre -->
+        <Entry Placeholder="Nombre completo"
+               FontSize="18"
+               TextColor="Black"
+               PlaceholderColor="Gray"
+               BackgroundColor="#F0F0F0"
+               HeightRequest="50" />
+
+        <!-- Campo para el Teléfono -->
+        <Entry Placeholder="Teléfono"
+               FontSize="18"
+               TextColor="Black"
+               PlaceholderColor="Gray"
+               BackgroundColor="#F0F0F0"
+               HeightRequest="50"
+               Keyboard="Telephone" />
+
+        <!-- Campo para el Correo -->
+        <Entry Placeholder="Correo electrónico"
+               FontSize="18"
+               TextColor="Black"
+               PlaceholderColor="Gray"
+               BackgroundColor="#F0F0F0"
+               HeightRequest="50"
+               Keyboard="Email" />
+
+        <!-- Botón de Enviar -->
+        <Button Text="Enviar"
+                BackgroundColor="Purple"
+                TextColor="White"
+                CornerRadius="10"
+                WidthRequest="200"
+                HeightRequest="50"
+                HorizontalOptions="Center"
+                Clicked="OnEnviarClicked" />
+        <!-- Vincula el evento aquí -->
+    </StackLayout>
+</ContentPage>

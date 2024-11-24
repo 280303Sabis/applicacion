@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="applicacion.MainContainerPage"
+             BackgroundColor="White">
+
+    <Grid RowDefinitions="*, Auto">
+        <!-- Contenedor para las páginas dinámicas -->
+        <ContentView x:Name="PageContainer" Grid.Row="0" />
+
+        <!-- Barra de Navegación Inferior -->
+        <Grid Grid.Row="1" HeightRequest="70" BackgroundColor="#F0F0F0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Botón de Recarga -->
+            <StackLayout Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center">
+                <ImageButton Source="recarga.png"
+                             HeightRequest="30"
+                             WidthRequest="30"
+                             Clicked="OnRecargaClicked" />
+                <Label Text="Recarga" FontSize="12" HorizontalOptions="Center" TextColor="Gray" />
+            </StackLayout>
+
+            <!-- Botón de Historial -->
+            <StackLayout Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center">
+                <ImageButton Source="historial.png"
+                             HeightRequest="30"
+                             WidthRequest="30"
+                             Clicked="OnHistorialClicked" />
+                <Label Text="Historial" FontSize="12" HorizontalOptions="Center" TextColor="Gray" />
+            </StackLayout>
+
+            <!-- Botón de Inicio -->
+            <StackLayout Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center">
+                <ImageButton Source="inicio.png"
+                             HeightRequest="30"
+                             WidthRequest="30"
+                             Clicked="OnInicioClicked" />
+                <Label Text="Inicio" FontSize="12" HorizontalOptions="Center" TextColor="Gray" />
+            </StackLayout>
+
+            <!-- Botón de Mapa -->
+            <StackLayout Grid.Column="3" VerticalOptions="Center" HorizontalOptions="Center">
+                <ImageButton Source="mapa.png"
+                             HeightRequest="30"
+                             WidthRequest="30"
+                             Clicked="OnMapaClicked" />
+                <Label Text="Mapa" FontSize="12" HorizontalOptions="Center" TextColor="Gray" />
+            </StackLayout>
+
+            <!-- Botón de Perfil -->
+            <StackLayout Grid.Column="4" VerticalOptions="Center" HorizontalOptions="Center">
+                <ImageButton Source="perfil.png"
+                             HeightRequest="30"
+                             WidthRequest="30"
+                             Clicked="OnPerfilClicked" />
+                <Label Text="Perfil" FontSize="12" HorizontalOptions="Center" TextColor="Gray" />
+            </StackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

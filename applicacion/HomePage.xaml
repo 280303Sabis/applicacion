@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="applicacion.HomePage"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <StackLayout>
+            <!-- Encabezado -->
+            <StackLayout BackgroundColor="Purple" Padding="30">
+                <Frame Padding="5" CornerRadius="50" BackgroundColor="White" HasShadow="True" WidthRequest="90" HeightRequest="90">
+                    <Image Source="avatar.png"
+           Aspect="AspectFill"
+           HorizontalOptions="Center"
+           VerticalOptions="Center" />
+                </Frame>
+                <Label Text="¡Hola!"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="Sabina Ortega"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       Margin="0,5,0,10" />
+                <Label Text="Tiempo disponible"
+                       FontSize="16"
+                       TextColor="White"
+                       HorizontalOptions="Center" />
+                <Label Text="2:00 horas"
+                       FontSize="36"
+                       FontAttributes="Bold"
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       Margin="0,10,0,0" />
+            </StackLayout>
+
+            <!-- Contenido Blanco -->
+            <StackLayout BackgroundColor="White" Padding="20" Margin="20, -20, 20, 0">
+                <!-- Acceso a Parquímetro -->
+                <Label Text="Accede a tu parquímetro"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#4A4A4A"
+                       Margin="0,0,0,10" />
+
+                <!-- Tarjetas de parquímetro -->
+                <Grid ColumnDefinitions="*, *" RowDefinitions="Auto, Auto" HorizontalOptions="FillAndExpand" VerticalOptions="Center" RowSpacing="10" ColumnSpacing="50">
+                    <!-- Tarjeta 1 -->
+                    <Frame Grid.Column="0" Grid.Row="0" Padding="15" BackgroundColor="#F5F5F5" WidthRequest="180" HeightRequest="200" HasShadow="True" Margin="5">
+                        <StackLayout Spacing="10" HorizontalOptions="Center">
+                            <Image Source="estacionamiento.png" HeightRequest="50" />
+                            <Label Text="PARQUÍMETRO"
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   TextColor="#4A4A4A"
+                                   HorizontalTextAlignment="Center" />
+                            <Label Text="Tarifa: $15.00"
+                                   FontSize="14"
+                                   TextColor="Gray"
+                                   HorizontalTextAlignment="Center" />
+                            <Button Text="Adquiere tu pasaje"
+                                    BackgroundColor="#66ceff"
+                                    TextColor="White"
+                                    HeightRequest="40"
+                                    FontSize="14"
+                                    HorizontalOptions="FillAndExpand"
+                                    Margin="0,10,0,0" />
+                        </StackLayout>
+                    </Frame>
+
+                    <!-- Tarjeta 2 -->
+                    <Frame Grid.Column="1" Grid.Row="0" Padding="15" BackgroundColor="#F5F5F5" WidthRequest="180" HeightRequest="200" HasShadow="True" Margin="5">
+                        <StackLayout Spacing="10" HorizontalOptions="Center">
+                            <Image Source="estacionamiento.png" HeightRequest="50" />
+                            <Label Text="PARQUÍMETRO"
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   TextColor="#4A4A4A"
+                                   HorizontalTextAlignment="Center" />
+                            <Label Text="Tarifa: $15.00"
+                                   FontSize="14"
+                                   TextColor="Gray"
+                                   HorizontalTextAlignment="Center" />
+                            <Button Text="Adquiere tu pasaje"
+                                    BackgroundColor="#66ceff"
+                                    TextColor="White"
+                                    HeightRequest="40"
+                                    FontSize="14"
+                                    HorizontalOptions="FillAndExpand"
+                                    Margin="0,10,0,0" />
+                        </StackLayout>
+                    </Frame>
+                </Grid>
+
+                <!-- Último Parquímetro -->
+                <Label Text="Último parquímetro"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#4A4A4A"
+                       Margin="0,20,0,10" />
+                <Frame BackgroundColor="#FFF"
+                       Padding="10"
+                       HasShadow="True">
+                    <Grid ColumnDefinitions="Auto, *, Auto" VerticalOptions="Center">
+                        <Image Source="last_trip.png" HeightRequest="40" Grid.Column="0" />
+                        <StackLayout Grid.Column="1" Padding="10,0,0,0">
+                            <Label Text="Parquímetro"
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   TextColor="#4A4A4A" />
+                            <Label Text="Fecha: 07/11/24 | Hora: 03:57"
+                                   FontSize="14"
+                                   TextColor="Gray" />
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

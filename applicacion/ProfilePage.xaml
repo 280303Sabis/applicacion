@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="applicacion.ProfilePage"
+             Title="Perfil"
+             BackgroundColor="#F9F9F9">
+
+    <Grid RowDefinitions="220, Auto, *">
+        <!-- Encabezado -->
+        <StackLayout BackgroundColor="Purple"  Padding="20" Grid.Row="0">
+            <!-- Foto de Perfil y Título -->
+            <StackLayout HorizontalOptions="Center">
+                <Frame Padding="5" CornerRadius="50" BackgroundColor="White" HasShadow="True" WidthRequest="90" HeightRequest="90">
+                    <Image Source="avatar.png"
+                           Aspect="AspectFill"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center" />
+                </Frame>
+                <Label Text="Sabina Ortega"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center"
+                       Margin="0,10,0,0" />
+                <Label Text="Perfil"
+                       FontSize="16"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center" />
+            </StackLayout>
+        </StackLayout>
+
+        <!-- Contenido Principal -->
+        <ScrollView Grid.Row="2" Padding="20">
+            <StackLayout Spacing="20">
+
+                <!-- Información -->
+                <Label Text="Información"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       Margin="0,0,0,10" />
+                <Frame CornerRadius="12" Padding="15" BackgroundColor="#d9d9d9">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Image Source="reportar.png" HeightRequest="30" WidthRequest="30" VerticalOptions="Center" />
+                        <Label Text="Reportar una unidad" FontSize="16" Grid.Column="1" VerticalOptions="Center" Margin="10,0,0,0" />
+                    </Grid>
+                </Frame>
+
+                <Frame CornerRadius="12" Padding="15" BackgroundColor="#d9d9d9">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Image Source="terminos.png" HeightRequest="30" WidthRequest="30" VerticalOptions="Center" />
+                        <Label Text="Términos y condiciones" FontSize="16" Grid.Column="1" VerticalOptions="Center" Margin="10,0,0,0" />
+                    </Grid>
+                </Frame>
+
+                <Frame CornerRadius="12" Padding="15" BackgroundColor="#d9d9d9">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Image Source="politicas.png" HeightRequest="30" WidthRequest="30" VerticalOptions="Center" />
+                        <Label Text="Políticas de privacidad" FontSize="16" Grid.Column="1" VerticalOptions="Center" Margin="10,0,0,0" />
+                    </Grid>
+                </Frame>
+
+                <Frame CornerRadius="12" Padding="15" BackgroundColor="#d9d9d9">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Image Source="contacto.png" HeightRequest="30" WidthRequest="30" VerticalOptions="Center" />
+                        <Label Text="Contacto" FontSize="16" Grid.Column="1" VerticalOptions="Center" Margin="10,0,0,0" />
+                    </Grid>
+                </Frame>
+
+                <!-- Cuenta -->
+                <Label Text="Cuenta"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       Margin="0,20,0,10" />
+                <Frame CornerRadius="12" Padding="15" BackgroundColor="#d9d9d9">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Image Source="cuenta.png" HeightRequest="30" WidthRequest="30" VerticalOptions="Center" />
+                        <Label Text="Mis datos" FontSize="16" Grid.Column="1" VerticalOptions="Center" Margin="10,0,0,0" />
+                    </Grid>
+                </Frame>
+
+                <Frame CornerRadius="12" Padding="15" BackgroundColor="#d9d9d9">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Image Source="candado.png" HeightRequest="30" WidthRequest="30" VerticalOptions="Center" />
+                        <Label Text="Seguridad" FontSize="16" Grid.Column="1" VerticalOptions="Center" Margin="10,0,0,0" />
+                    </Grid>
+                </Frame>
+
+                <Frame CornerRadius="12" Padding="15" BackgroundColor="#d9d9d9">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Image Source="eliminarcuenta.png" HeightRequest="30" WidthRequest="30" VerticalOptions="Center" />
+                        <Label Text="Eliminar cuenta" FontSize="16" Grid.Column="1" VerticalOptions="Center" Margin="10,0,0,0" />
+                    </Grid>
+                </Frame>
+
+                <Frame CornerRadius="12" Padding="15" BackgroundColor="#d9d9d9">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Image Source="cerrarsesion.png" HeightRequest="30" WidthRequest="30" VerticalOptions="Center" />
+                        <Label Text="Cerrar sesión" FontSize="16" Grid.Column="1" VerticalOptions="Center" Margin="10,0,0,0" />
+                    </Grid>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>
